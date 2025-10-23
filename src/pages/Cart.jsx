@@ -53,7 +53,7 @@ const Cart = ({ cart, removeFromCart, navigate, updateCartItem }) => {
           {cart.map((item) => (
             <div key={item.id} className="flex justify-between items-center border-b last:border-b-0 py-4">
               <div className="flex items-center space-x-4">
-                {/* Use imagePreview for custom tags, or a default visual for mock tags */}
+                
                 {(item.imagePreview || item.imageUrl) && (
                   <img
                     src={item.imagePreview || item.imageUrl}
@@ -62,7 +62,7 @@ const Cart = ({ cart, removeFromCart, navigate, updateCartItem }) => {
                   />
                 )}
                 <div>
-                  {/* Display customized name if available, otherwise use mock name */}
+                  
                   <p className="font-bold text-xl text-gray-800">{item.petName || item.name}</p>
                   <p className="text-sky-600 text-sm font-medium">
                     {item.petName ? `Custom Tag - ${item.type || 'Circle'}` : "Template"}

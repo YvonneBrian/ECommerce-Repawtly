@@ -218,7 +218,7 @@ const Product = ({
       <div className="text-center mb-10">
         <button
           onClick={() => {
-            // Require login before allowing full customization
+            
             if (!requireLogin()) return;
 
             setShowModal(true);

@@ -340,7 +340,7 @@ const Reg = ({ navigate, handleRegister }) => {
     <div className="flex items-center justify-center min-h-full p-4 md:p-8">
       <div className="max-w-4xl w-full bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
 
-        {/* Left Side */}
+        
         <div className="w-full md:w-1/3 bg-sky-600 p-8 flex flex-col justify-start relative text-white">
           <div className="flex items-center mb-10">
             <PawPrint className="w-6 h-6 mr-2 text-amber-300" />
@@ -359,7 +359,7 @@ const Reg = ({ navigate, handleRegister }) => {
           </div>
         </div>
 
-        {/* Right Side */}
+        
         <div className="w-full md:w-2/3 p-8 lg:p-12">
           {renderStepContent()}
 
