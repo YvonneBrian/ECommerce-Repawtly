@@ -9,7 +9,7 @@ const Checkout = ({ cart, clearCart, navigate }) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [isConfirmed, setIsConfirmed] = useState(false);
 
-  // Calculate totals dynamically
+  
   const subtotal = cart.reduce((sum, item) => sum + (item.price || 25.99), 0);
   const shipping = cart.length > 0 ? 65 : 0;
   const total = (subtotal + shipping).toFixed(2);
